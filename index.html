@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisa Multimarcas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/img/brisa_logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/img/brisa_logo.jpg">
+    <link rel="icon" sizes="192x192" href="./assets/img/brisa_logo.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><img src="./assets/img/brisa_logo.jpg" alt="Brisa Multimarcas"></li>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#about">VENDA</a></li>
+                    <li><a href="#carros">COMPRA</a></li>
+                    <li><a href="#about">A EMPRESA</a></li>
+                    <li><a href="#about">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="car-gallery">
+        <section class="expositor">
+            <h1>Encontre aqui o carro dos <strong>SEUS SONHOS</strong></h1>
+            <p> Navegue pelas nossas opções e descubra o carro que combina com seu estilo, necessidades e, claro, seu
+                bolso. Venha nos visitar ou explore nosso estoque online e dê o primeiro passo para a sua nova jornada
+                sobre quatro rodas!</p>
+        </section>
+
+        <section class="divisor">
+            <h1>Conheça nossos carros <strong>mais amados</strong></h1>
+        </section>
+
+        <section id="carros" class="carros">
+            <!-- Os carros aparecem aqui por conta da requisição feita no arquivo js. -->
+             <!-- A requisição é enviada ao JsonServer, onde armazenei os dados dos veículos. -->
+        </section>
+
+        <section class="divisor-normal">
+            <h1>Saiba mais sobre nós!</h1>
+        </section>
+
+        <section id="about" class="about">
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.3551553599346!2d-52.67881631236161!3d-26.234347493183027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e553887576de1d%3A0x957d391f0aa64455!2sBrisa%20Multimarcas!5e0!3m2!1spt-BR!2sbr!4v1732122687633!5m2!1spt-BR!2sbr"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="about-description">
+                <p>Estamos localizados próximos ao centro de <strong>Pato Branco</strong>, prontos para atender você e
+                    sua necessidade automotiva! <br><br> Confira o nosso <strong>estoque de veículos</strong> para encontrar
+                    o seu próximo veículo. Assim que achar o automóvel perfeito, envie uma mensagem para um de nossos
+                    especialistas!
+                </p> <br>
+                <p>Se preferir, nos envie uma mensagem para que possamos ajudar você a encontrar o veículo correto! 
+                    Estamos aptos e à disposição para realizar financiamentos em bancos, então <strong>não perca tempo!</strong>
+                </p> <br> <br>
+                <a href="https://wa.me/5546988110811" target="_blank" class="cta-button">
+                    Conversar com um especialista da Brisa Multimarcas!
+                </a>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./assets/img/brisa_logo.jpg" alt="Brisa Multimarcas">
+        <p>&#169; 2024 - All rights reserved.</p>
+    </footer>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>

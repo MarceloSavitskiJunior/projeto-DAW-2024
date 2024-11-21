@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../img/banner_mustang.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-y: -10vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav {
+    transition: 0.3s;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 16px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+header a {
+    line-height: 2em;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #d2232a;
+    border-bottom: 1px solid #d2232a;
+}
+
+header img {
+    height: 34px;
+    border-radius: 10px;
+}
+
+.car-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+strong {
+    color: #d2232a;
+    font-weight: 700;
+}
+
+section {
+    height: 30vh;
+    width: 70%;
+}
+
+.divisor-normal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+    margin: 120px 0;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid #d2232a;
+    border-top: 3px solid #d2232a;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 50%;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.divisor::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    animation: brilho 4s infinite;
+}
+
+.expositor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+    padding-top: 1vh;
+    align-items: center;
+
+    h1 {
+        font-size: 50px;
+        color: black;
+    }
+
+    p {
+        width: 50vw;
+        color: white;
+        font-weight: 400;
+    }
+}
+
+.carros {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    height: 55vh;
+}
+
+.car {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 33rem;
+}
+
+.car img {
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.7);
+}
+
+.car h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.car:hover {
+    transform: scale(1);
+}
+
+.car:hover img {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+}
+
+.about {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.cta-button {
+    background-color: #d2232a;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d2232a;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+    transform: scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    height: 20vh;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    p {
+        font-weight: 400;
+        font-size: large;
+        color: #fff;
+    }
+    img {
+        height: 100px;
+        border-radius: 10px;
+    }
+}
+.location {
+    width: 100%;
+}
+
+.location iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 50vw;
+    max-height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+@keyframes brilho {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-gallery {
+        flex-direction: column;
+    }
+
+    .car {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 50%;
+        background-position-y: center;
+        font-size: 0.9rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header a {
+        font-size: 0.9rem;
+    }
+
+    .divisor,
+    .divisor-normal {
+        height: 30vh;
+        width: 90%;
+    }
+
+    .expositor {
+        height: auto;
+        padding: 20px;
+    }
+
+    .expositor h1 {
+        font-size: 2rem;
+    }
+
+    .expositor p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .carros {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .car {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .car img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        width: 90%;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer img {
+        height: 60px;
+    }
+}
