@@ -5,4 +5,4 @@
 
 ![Logo da Brisa Multimarcas](./assets/img/brisa_logo.jpg)
 
-###### (https://www.instagram.com/brisamultimarcaspb/ é o instagram, caso tenha curiosidade)
+###### (https://www.instagram.com/brisamultimarcaspb/ é o instagram da loja. Dá uma olhada nas opções e garanta seu automóvel de qualidade!)
