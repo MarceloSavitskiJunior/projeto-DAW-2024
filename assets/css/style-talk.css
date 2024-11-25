@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-image: url('../img/banner_mustang.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-y: -10vh;
@@ -87,121 +87,6 @@ section {
     width: 70%;
 }
 
-.divisor-normal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 100vw;
-    margin: 120px 0;
-    background-color: black;
-    color: #fff;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    border-bottom: 3px solid #d2232a;
-    border-top: 3px solid #d2232a;
-
-    h1 {
-        text-align: center;
-    }
-}
-
-.divisor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    width: 50%;
-    background-color: black;
-    color: #fff;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-
-    h1 {
-        text-align: center;
-    }
-}
-
-.divisor::before {
-    content: '';
-    position: absolute;
-    top: 60%;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #fff, transparent);
-    animation: brilho 4s infinite;
-}
-
-.expositor {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 80vh;
-    padding-top: 1vh;
-    align-items: center;
-
-    h1 {
-        font-size: 50px;
-        color: black;
-    }
-
-    p {
-        width: 50vw;
-        color: white;
-        font-weight: 400;
-    }
-}
-
-.carros {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    height: 55vh;
-}
-
-.car {
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 33rem;
-}
-
-.car img {
-    width: 55%;
-    height: auto;
-    border-radius: 10px;
-    transition: filter 0.3s, transform 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    filter: brightness(0.7);
-}
-
-.car h2 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.car:hover {
-    transform: scale(1);
-}
-
-.car:hover img {
-    filter: brightness(1.2);
-    transform: scale(1.02);
-}
-
 .about {
     height: 70vh;
     display: flex;
@@ -259,33 +144,6 @@ footer {
     img {
         height: 100px;
         border-radius: 10px;
-    }
-}
-
-.location {
-    width: 100%;
-}
-
-.location iframe {
-    width: 90%;
-    max-width: 600px;
-    height: 50vw;
-    max-height: 450px;
-    border: 0;
-    border-radius: 10px;
-}
-
-
-
-@keyframes brilho {
-    0% {
-        left: -100%;
-    }
-    50% {
-        left: 100%;
-    }
-    100% {
-        left: -100%;
     }
 }
 
