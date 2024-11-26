@@ -121,8 +121,17 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.input {
+input {
     border-radius: 8px;
+    border: 1px solid #d2232a;
+    padding: 10px;
+}
+
+textarea {
+    border-radius: 8px;
+    border: 1px solid #d2232a;
+    padding: 10px;
+    width: 100%;
 }
 
 
@@ -159,7 +168,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        background-size: 50%;
+        background-size: cover;
         background-position-y: center;
         font-size: 0.9rem;
     }

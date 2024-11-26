@@ -299,9 +299,17 @@ footer {
     }
 }
 
+@media (max-width: 1509px) {
+    body {
+        background-size: cover;
+        background-position-y: -107vh;
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px) {
     body {
-        background-size: 50%;
+        background-size: cover;
         background-position-y: center;
         font-size: 0.9rem;
     }
